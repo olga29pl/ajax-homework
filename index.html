@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Соціальне опитування</title>
+</head>
+
+<body>
+    <h1>Анкета соціального опитування населення про куріння</h1>
+    <form>
+        <p>Ви курите:</p>
+        <label><input type="radio" name="question-answer" value="так">Так</label>
+        <label><input type="radio" name="question-answer" value="ні">Ні</label>
+        <br>
+        <p>Вік:</p>
+        <select id="age">
+                <option value="менше 18" selected>менше 18</option>
+                <option value="18-50">20-50</option>
+                <option value="більше 50">більше 50</option>
+            </select>
+        <br>
+        <p>Cтать:</p>
+        <label><input type="radio" name="gender" value="чол">Чол</label>
+        <label><input type="radio" name="gender" value="жін">Жін</label>
+        <label><input type="radio" name="gender" value="інша">Інша</label>
+        <br>
+        <p>Курите з якого віку?</p>
+        <input type="number" id="beginning" min="10" max="90">
+        <br>
+        <p>Потреба в сигаретах на день:</p>
+        <select id="quantity">
+                <option value="пів пачки" selected>пів пачки</option>
+                <option value="1 пачка">1 пачка</option>
+                <option value=">1 пачки">>1 пачки</option>
+            </select>
+        <br>
+        <p>Причини куріння:</p>
+        <label><input type="checkbox" name="smoking" value="стрес">Стрес</label><br>
+        <label><input type="checkbox" name="habity" value="звичка">Звичка</label><br>
+        <label><input type="checkbox" name="pleasure" value="задоволення">Задоволення</label><br>
+        <label><input type="checkbox" name="selfaffirmation" value="самоутвердження">Самоутвердження</label>
+        <br>
+        <p>Чи є у вас симптоми курця?</p>
+        <label><input type="checkbox" name="cough" value="кашель">Ранковий кашель</label><br>
+        <label><input type="checkbox" name="skin_color" value="сірість шкіри">Сірість шкіри</label><br>
+        <label><input type="checkbox" name="finger_color" value="жовтизна пальців">Жовтизна пальців</label><br>
+        <label><input type="checkbox" name="teeth" value="жовтизна зубів">Жовтизна зубів</label>
+        <br>
+        <p>Якщо ви не палите то чому?</p>
+        <label><input type="checkbox" name="health" value="здоров'я">Бережете своє здоров'я</label><br>
+        <label><input type="checkbox" name="credo" value="переконання">Із-за переконання</label><br>
+        <label><input type="checkbox" name="economy" value="економія коштів">Із-за економії коштів</label><br>
+        <label><input type="checkbox" name="imige" value="імідж">Мішає вашому іміджу</label>
+        <br>
+        <label><input type="checkbox" name="lifestyle" value="стиль життя">Мішає вашому стилю життя</label>
+        <br>
+        <p>Чи збираєтесь ви кинути палити і з яких причин?</p>
+        <label><input type="radio" name="stop_smoking" value="так">Так</label>
+        <label><input type="radio" name="stop_smoking" value="ні">Ні</label>
+        <br>
+        <textarea id="stopreason" name="reason_of_stop_smoking" rows="10" cols="50" placeholder="Ваші причини"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
